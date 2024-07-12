@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            
+            background-color: #00669F;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+    .cards, .cards-harley, .cards-superman {
+        
+        position: relative;
+        width: 300px;
+        height: 450px;
+        top: 250px;
+        left: 32px;
+        justify-content: center;
+        
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+        background-color: #F3F3F3;
+        
+    }
+
+    .card-header, .card-header-harley, .cards-header-superman {
+        position: relative;
+        text-align: center;
+        
+        
+        
+    }
+    .pattern-batman, .pattern-harley .pattern-superman {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+    }
+
+    .batman, .harley, .superman {
+        position: absolute;
+        top: 120px;
+        left: 90px;
+    }
+    
+    .harley {
+        border-radius: 100%;
+        box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .superman {
+        border-radius: 100%;
+        box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .card-header-harley span {
+        position: absolute;
+        top: 250px;
+        right: 80px;
+        font-size: 25px;
+    }
+
+
+    span {
+        position: absolute;
+        top: 250px;
+        right: 95px;
+        font-size: 25px;
+    }
+
+    
+    .card-body, .card-body-harley , .card-body-superman {
+        position: absolute;
+        top: 260px;
+        padding: 5%;
+        font-size: 14px;
+    }
+
+    .card-footer, .card-footer-harley,.card-footer-superman {
+        position:absolute;
+        top: 390px;
+        left: 90px;
+    }
+    button {
+        background-color: #00669F;
+        border-style: none;
+        color: white;
+        min-width: 120px;
+        min-height: 40px;
+        
+    }
+
+    footer {
+        position: relative;
+        color: white;
+        height: 40px;
+        background-color: #00669F;
+        top: 43vh
+    }
+
+    .text-footer {
+        position: absolute;
+        padding: 10px;
+        left: 30px;
+        justify-content: center;
+    }
+
+button:hover {
+    background-color: #012e48;
+}
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<header>
+<h1>Heroes</h1>
+
+</header>
+<section class="container">
+    <section class="cards">
+        <article class="card-header">
+
+                <img  src="designs/patternbatman.png" alt="batman bg"class="pattern-batman">
+
+                <img src="designs/batman.png" alt="batman" class="batman">
+                <span>Batman</span>
+
+        </article>
+
+    <section class="card-body">
+        <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.</p>
+
+    </section>
+
+        <section class="card-footer">
+            <nav class="button-footer">
+                <button>Ver más</button>
+
+            </nav>
+        </section>
+    </section>
+
+
+    <section class="cards-harley">
+        <article class="card-header-harley">
+
+                <img  src="designs/harley/pattern-harley.png" alt="harley bg"class="pattern-harley">
+
+                <img src="designs/harley/harley.png" alt="harley" class="harley">
+                <span>Harley Quinn</span>
+
+        </article>
+
+    <section class="card-body-harley">
+        <p>La creación de Harley Quinn fue una idea de último minuto propuesta por
+            el escritor estadounidense Paul Dini para modificar una escena del vigésimo-segundo episodio de Batman: la serie animada
+        </p>
+
+    </section>
+
+        <section class="card-footer-harley">
+            <nav class="button-footer-harley">
+                <button>Ver más</button>
+
+            </nav>
+        </section>
+    </section>
+
+    
+    <section class="cards-superman">
+        <article class="card-header-superman">
+
+                <img  src="designs/superman/superman-bg.png" alt="superman-bg"class="pattern-superman">
+
+                <img src="designs/superman/superman.png" alt="superman" class="superman">
+                <span>Superman</span>
+
+        </article>
+
+    <section class="card-body-superman">
+        <p>Bajo la identidad de Clark Kent, Superman vive en medio de los humanos como 
+        un «tímido reportero» del diario Daily Planet de Metrópolis. 
+        Ahí trabaja junto a la reportera Lois Lane.</p>
+
+    </section>
+    
+
+        <section class="card-footer-superman">
+            <nav class="button-footer-superman">
+                <button>Ver más</button>
+
+            </nav>
+        </section>
+    </section>
+
+
+</section>
+
+        <footer>
+
+            <div class="text-footer">Todos los derechos reservados @frontend</div>
+
+
+
+        </footer>
+</body>
+</html>
